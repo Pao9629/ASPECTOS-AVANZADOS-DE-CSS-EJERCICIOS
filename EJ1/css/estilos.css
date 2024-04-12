@@ -1,0 +1,108 @@
+
+body{
+    margin: 0 auto;
+    width: 1200px;
+}
+header, footer{
+    text-align: center;
+    background-color: lightslategray;
+    height: 150px;  
+    color: white;
+}
+.centrado{
+      /*centrado absoluto */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+nav{
+    background-color: green;
+}
+main{
+    overflow: hidden;
+    height: 100%;
+}
+aside{
+    float: left;
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-right: 4px solid lightseagreen;
+
+}
+#contenido{
+    float: right;
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* EJERCICIO A*/
+/** Usa el selector descendiente para pintar de verde todos los títulos h2 de los articles. ¿Hay 
+algún h2 dentro de article que no haya cambiado de color? **/
+article h2{
+    color: rgb(19, 189, 19);
+    font-weight: 800;
+}
+/* EJERCICIO B */
+/** Usa este selector para que le ponga un sombreado a los span hijos directos de los párrafo**/
+p > span{
+    background-color: lightblue;
+}
+
+/* EJERCICIO C */
+/** Usa este selector para poner un border radius y un fondo al primer div después de un 
+párrafo dentro del aside**/
+aside p + div{
+    border-radius: 10px;
+    height: 60px;
+    background-color: lightskyblue;
+}
+
+/** EJERCICIO D Usa este selector para que el input de tipo email cuando sea válido se muestre en verde y 
+cuando sea inválido en rojo. **/
+input[type="email"]:valid{
+    box-shadow: 1px 1px 3px green;
+}
+input[type="email"]:invalid{
+    box-shadow: 1px 1px 3px red;
+}
+/** EJERCICIO E Usa este selector junto con el atributo hover para poner un color de fondo en el menú d 
+navegación cuando se pasa por encima **/
+nav{
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+    
+}
+nav ul li:hover{
+    background-color: lightpink;
+}
+nav ul li a{
+    color:white;
+}
+
+
+/** EJERCICIO F Usa el selector raíz para poner color de fondo negro a la página y color de letra blanco **/
+:root{
+    background-color: black;
+    color: white;
+}
+
+/** EJERCICIO. SIMULAR CLICK EN CSS SIN USAR JAVASCRIPT **/
+
+
+
+
+
+
+
+
+
+
+
+}
