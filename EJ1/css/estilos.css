@@ -24,19 +24,19 @@ main{
 }
 aside{
     float: left;
-    width: 20%;
+    width: 21%;
     height: 100%;
-    box-sizing: border-box;
+    box-sizing: content-box;
     padding: 20px;
     border-right: 4px solid lightseagreen;
 
 }
 #contenido{
     float: right;
-    width: 80%;
+    width: 75%;
     height: 100%;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 50px;
 }
 
 /* EJERCICIO A*/
@@ -93,9 +93,19 @@ nav ul li a{
     color: white;
 }
 
-/** EJERCICIO. SIMULAR CLICK EN CSS SIN USAR JAVASCRIPT **/
+/** Haciendo uso del ejercicio 1, dentro de article cambia la primera letra de todos los párrafos 
+a color verde, tamaño de fuente 2 em y cambia la familia de la fuente a Gill Sans. Además,
+pon la primera línea de cada párrafo en color morado **/
 
+article p::first-letter{
+    color: green;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+article p::first-line{
+    color: hotpink;
+}
 
 
 
